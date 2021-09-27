@@ -1,0 +1,197 @@
+<!DOCTYPE HTML>
+<html lang="en">
+	<head>
+		<h1>Rainybits Quality Engineering Training</h1>
+		<img src="https://zenprospect-production.s3.amazonaws.com/uploads/pictures/60f4a43bd62223000167003b/picture" alt="Pradeep_Training" width="175" height="100">
+		<style>
+			h1 {text-align: center;}
+			img {image-align: center;}
+			a:hover {
+				background-color: DeepSkyBlue;
+			}
+			option:checked {
+			height: 100px;
+			width: 100px;
+			}
+		</style>
+	</head>
+	<script type="text/javascript">
+		function output(resultText){
+		  document.getElementById('output').childNodes[0].nodeValue=resultText;
+		}
+
+		function show_confirm(){
+		  var confirmation=confirm("Choose an option.");
+		  if (confirmation==true){
+			output("Confirmed.");
+		  }
+		  else{
+			output("Rejected!");
+		  }
+		}
+
+		function show_alert(){
+		  alert("I'm blocking!");
+		  output("Alert is gone.");
+		}
+		
+		function show_prompt(){
+		  var response = prompt("What's the best web QA tool?","Selenium");
+		  output(response);
+		}
+		
+		function open_window(windowName){
+		  window.open("newWindow.html",windowName);
+		}
+		
+		function myFunction() {
+			var x = document.getElementById("myFile");
+			x.disabled = true;
+		}
+
+		function myFunction() {
+			var x = document.getElementById("myInput");
+			if (x.type === "password") {
+				x.type = "text";
+			} else {
+				x.type = "password";
+			}
+		}
+
+		function sortList() {
+		  var list, i, switching, b, shouldSwitch;
+		  list = document.getElementById("id01");
+		  switching = true;
+		  /*Make a loop that will continue until
+		  no switching has been done:*/
+		  while (switching) {
+			//start by saying: no switching is done:
+			switching = false;
+			b = list.getElementsByTagName("LI");
+			//Loop through all list-items:
+			for (i = 0; i < (b.length - 1); i++) {
+			  //start by saying there should be no switching:
+			  shouldSwitch = false;
+			  /*check if the next item should
+			  switch place with the current item:*/
+			  if (b[i].innerHTML.toLowerCase() > b[i + 1].innerHTML.toLowerCase()) {
+				/*if next item is alphabetically
+				lower than current item, mark as a switch
+				and break the loop:*/
+				shouldSwitch = true;
+				break;
+			  }
+			}
+			if (shouldSwitch) {
+			  /*If a switch has been marked, make the switch
+			  and mark the switch as done:*/
+			  b[i].parentNode.insertBefore(b[i + 1], b[i]);
+			  switching = true;
+			}
+		  }
+		}		
+    </script>
+	<body>
+		<h1>
+			<title>Quality Engineering Transformation Training Purposes</title>
+		</h1><br> <br> 
+		<div class="search-container">
+			<form action="/action_page.php">
+			  <input type="text" id="searchbar" placeholder="Search.." name="search">
+			  <button type="submit" id="submitbtn">Submit</button>
+			</form>
+		</div><br> <br>
+		<input type="button" id="btnConfirm" onclick="show_confirm()" value="Show confirm box" />
+		<input type="button" id="btnAlert" onclick="show_alert()" value="Show alert" />
+		<input type="button" id="btnPrompt" onclick="show_prompt()" value="Show prompt" />
+		<a href="newWindow.html" id="lnkNewWindow" target="_blank">New Window Link</a>
+		<input type="button" id="btnNewNamelessWindow" onclick="open_window()" value="Open Nameless Window" />
+		<input type="button" id="btnNewNamedWindow" onclick="open_window('Mike')" value="Open Named Window" /><br> <br>
+		<form action="/actions.php">
+			<p><strong>Verify radiobutton status:</strong></p>
+			<input type="radio" name="gender" value="male"> Male<br>
+			<input type="radio" name="gender" value="female"> Female<br>
+			<input type="radio" name="gender" value="other"> Other<br> <br>
+			<p><strong>Verify checkboxes status:</strong></p>
+			<input type="checkbox" name="team" value="OMNI NEXT"> I am from OMNI NEXT<br>
+			<input type="checkbox" name="team" value="SEDARU OMNI"> I am from SEDARU OMNI<br>
+			<input type="checkbox" name="team" value="SEDARU OUTAGE"> I am from SEDARU OUTAGE<br>
+			<input type="checkbox" name="team" value="SEDARU CIP"> I am from SEDARU CIP<br> <br>
+			<p><strong>Verify file upload:</strong></p>
+			<input type="file" id="myFile"><br> <br>
+			<p><strong>Verify dropdown values:</strong></p>
+			<select>
+			  <option value="next">OMNI NEXT</option>
+			  <option value="omni">SEDARU OMNI</option>
+			  <option value="outage">SEDARU OUTAGE</option>
+			  <option value="cip">SEDARU CIP</option>
+			  <option value="ops">SEDARU OPS</option>
+			  <option value="studio">SEDARU STUDIO</option>
+			</select>
+		</form><br> <br>
+		<p><strong>Click the button to sort the list alphabetically:</strong></p>
+		<button onclick="sortList()">Sort</button>
+		<ul id="id01">
+		  <li>Oslo</li>
+		  <li>Stockholm</li>
+		  <li>Helsinki</li>
+		  <li>Berlin</li>
+		  <li>Rome</li>
+		  <li>Madrid</li>
+		</ul>
+		<br />
+
+		<p><strong>HTML Table</strong></p>
+
+		<table id="table">
+		<tr>
+			<th>Company</th>
+			<th>Contact</th>
+			<th>Country</th>
+		</tr>
+		<tr>
+			<td>Alfreds Futterkiste</td>
+			<td>Maria Anders</td>
+			<td>Germany</td>
+		</tr>
+		<tr>
+			<td>Centro comercial Moctezuma</td>
+			<td>Francisco Chang</td>
+			<td>Mexico</td>
+		</tr>
+		<tr>
+			<td>Ernst Handel</td>
+			<td>Roland Mendel</td>
+			<td>Austria</td>
+		</tr>
+		<tr>
+			<td>Island Trading</td>
+			<td>Helen Bennett</td>
+			<td>UK</td>
+		</tr>
+		<tr>
+			<td>Laughing Bacchus Winecellars</td>
+			<td>Yoshi Tannamuri</td>
+			<td>Canada</td>
+		</tr>
+		<tr>
+			<td>Magazzini Alimentari Riuniti</td>
+			<td>Giovanni Rovelli</td>
+			<td>Italy</td>
+		</tr>
+		</table>
+		<p><strong>Verify password field:</strong></p>
+		<!-- Password field -->
+		Password: <input type="password" value="FakePSW" id="myInput">
+
+		<!-- An element to toggle between password visibility -->
+		<input type="checkbox" onclick="myFunction()">Show Password
+		<br> <br/>
+		<span id="output">
+		</span>
+		<footer>
+		<p>Created by: Pradeep Sibbal</p>
+		<p>Email: <a href="mailto:pradee@rainybits.com">pradeep@rainybits.com</a></p>
+</footer>
+	</body>
+</html>

@@ -1,0 +1,11 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\cypress",
+    "\\cypress\\integration",
+    "\\cypress\\integration\\rainybit",
+    "\\cypress\\support"
+  ],
+  "SelectedNode": "\\cypress\\support\\commands.js",
+  "PreviewInSolutionExplorer": false
+}
